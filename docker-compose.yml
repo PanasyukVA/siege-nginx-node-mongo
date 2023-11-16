@@ -32,8 +32,8 @@ services:
     hostname: siege-application
     healthcheck:
         test: ["CMD", "curl", "-f", "http://localhost:8080/api/health/check"]
-        interval: 5s
-        timeout: 5s
+        interval: 10s
+        timeout: 10s
         retries: 5
 
   siege-c10:
